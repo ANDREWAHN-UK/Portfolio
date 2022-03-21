@@ -59,12 +59,16 @@ p,
     padding-top: .5rem;
 }
 
+.home-button:hover{
+background-color:rgba(190, 166, 32, 0.555);
+}
 /* about */
 
 .about{
     height: 100vh;
     width: 100vw;
-    background-color: aqua;
+    background-image: url(/assets/media/images/typewriter.jpg);
+    background-size: cover;
 }
 
 .card{
@@ -78,7 +82,8 @@ p,
 .portfolio{
     height: 100vh;
     width: 100vw;
-    background-color: rgb(180, 147, 56);
+    background-image: url(/assets/media/images/iphone-smartphone-mac-mobile-apple-technology-710553-pxhere.com.jpg);
+    background-size: cover;
 }
 
 
@@ -87,7 +92,8 @@ p,
 .blog{
     height: 100vh;
     width: 100vw;
-    background-color: rgb(99, 68, 100);
+    background-image: url(/assets/media/images/notebook-table-book-leather-pen-journal-1249-pxhere.com.jpg);
+    background-size: cover;
 }
 
 /* contact */
@@ -95,5 +101,6 @@ p,
 .contact{
     height: 100vh;
     width: 100vw;
-    background-color: rgb(74, 94, 100);
+    background-image: url(/assets/media/images/hand-light-finger-phone-lighting-close-up-912311-pxhere.com.jpg);
+    background-size: cover;
 }
