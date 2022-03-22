@@ -1,11 +1,15 @@
-
-
 /* All */
-a{
+a {
     text-decoration: none;
 }
+.container-fluid{
+box-sizing: border-box;
+}
 
-/* Home */
+.heading{
+    color: black;
+}
+/* ===================================================================// home //=========================================================== */
 .home {
     text-align: center;
     height: 100vh;
@@ -33,74 +37,290 @@ h1 {
     font-family: Trebuchet MS;
     font-weight: bold;
     text-align: center;
-    
+
 }
 
-.home h1{
+.home h1 {
     top: 30vh;
 }
 
-p,
+.home p,
 .home-button {
     color: white;
     position: relative;
-    top: 30vh;      
+    top: 30vh;
 }
 
 .home-button {
-    border: 1px solid rgba(128,128,128, .5);
+    border: 1px solid rgba(128, 128, 128, .5);
     border-radius: 10px;
     width: 10rem;
     margin: auto;
-    background-color: rgba(128,128,128, .5);
-    width: 15rem;  
+    background-color: rgba(128, 128, 128, .5);
+    width: 15rem;
     height: 3rem;
     text-align: center;
     padding-top: .5rem;
 }
 
-.home-button:hover{
-background-color:rgba(190, 166, 32, 0.555);
+.home-button:hover {
+    background-color: rgba(190, 166, 32, 0.555);
 }
-/* about */
+/* ===================================================================// about //=========================================================== */
 
-.about{
+
+.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about {
     height: 100vh;
     width: 100vw;
-    background-image: url(/assets/media/images/typewriter.jpg);
+    background-color: white;
     background-size: cover;
+
 }
 
-.card{
+
+.about p {
+    color: black;
+    text-align: center;
+}
+
+.card {
     width: 25rem;
+    top: 5rem;
+    background: transparent;
+    border: transparent;
+    margin-left: 5rem;
+}
+
+.tag-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+.tag {
+    height: 10rem;
+    width: 20rem;
+    flex: 0 1 auto;
+    align-self: auto;
+    text-align: center;
+}
+
+.tag-img-top {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.tag h4:hover {
+    color: gold;
+}
+
+.card h5 {
+    text-align: center;
+}
+
+#bio-pic {
+    border-radius: 50%;
+    margin: auto;
+}
+
+#bio-card {
+   margin-left: 15rem;
+}
+
+#bio-button {
+    width: 60%;
+    margin-left: 25%;
+}
+
+.card-img-top {
+    height: 20rem;
+    width: 20rem;
+}
+
+#skill-card {
+    margin-left: 25rem;
+    text-transform: uppercase;
+    
 }
 
 
+/* uses bootstrap breakpoints as a start point */
 
-/* portfolio */
+@media only screen and (max-width: 992px){
 
-.portfolio{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(/assets/media/images/iphone-smartphone-mac-mobile-apple-technology-710553-pxhere.com.jpg);
-    background-size: cover;
+    .card {
+        top: 5rem;
+    }
+
+    .card-img-top {
+        height: 10rem;
+        width: 10rem;
+        margin: auto;
+    }
+
+    #skill-card{
+        align-items: center;
+        margin-left: 5rem;
+    }
+
+    #bio-card{
+        margin-left: 3rem;
+    }
+
+    
+}
+@media only screen and (max-width: 768px) {
+
+    .tag {
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .tag p{
+        display: none;
+    }
+
+    .tag-img-top{
+        height: 4rem;
+        width: 4rem;
+    }
+        
+    .card-img-top {
+        display: none;
+    }
+
+    .card {
+        top: 10rem;
+    }
+
+    #skill-card,
+    #bio-card {
+        border: 1px solid black;
+        font-size: smaller;
+        padding: 0;
+        margin-left: 5rem;
+        width: 18rem;
+    }
+
+    #skill-card{
+        margin-left: 8rem;
+    }
+
+    #bio-button{
+        width: 100%;
+        margin: auto;
+    }
+
+    
+
+    .heading{
+        font-size: 3rem;
+    }
+
 }
 
+ @media only screen and (max-width: 576px){
+    #skill-card,
+    #bio-card {
+        width: 15rem;
+        margin-left: 0;
+    }
+
+    #skill-card{
+        margin-left: .5rem;
+    }
+
+    .card{
+        top: 5rem;        
+    }
+
+    #bio-button{
+        width: 90%;
+        margin: 10px;
+    }
+
+    .heading{
+        font-size: 3rem;
+        color: black;
+    }
+
+    .card-body{
+        padding: 0;
+    }
+
+    .tag h4{
+        font-size: smaller;
+    }
+
+    /* this is for Galaxy A51/71 */
+    @media only screen and (max-width: 412px){
+        #skill-card, #bio-card{
+            width: 11rem;
+            padding: 0;
+            align-items: stretch;
+        }
+        #skill-card{
+            margin-left: 3px;
+        }
+    }
+
+    @media only screen and (max-width: 360px){
+        #skill-card{
+            margin: auto;
+        }
+    }
+    /* this is for the galaxy fold */
+    @media only screen and (max-width: 280px){
+        #skill-card, #bio-card{
+            display: none;
+        }
+    }
+} 
+
+    /* portfolio */
+
+    .portfolio {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(/assets/media/images/iphone-smartphone-mac-mobile-apple-technology-710553-pxhere.com.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
 
 
-/* blog */
-.blog{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(/assets/media/images/notebook-table-book-leather-pen-journal-1249-pxhere.com.jpg);
-    background-size: cover;
-}
 
-/* contact */
+    /* blog */
+    .blog {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(/assets/media/images/notebook-table-book-leather-pen-journal-1249-pxhere.com.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
 
-.contact{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(/assets/media/images/hand-light-finger-phone-lighting-close-up-912311-pxhere.com.jpg);
-    background-size: cover;
-}
+    /* contact */
+
+    .contact {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(/assets/media/images/hand-light-finger-phone-lighting-close-up-912311-pxhere.com.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
