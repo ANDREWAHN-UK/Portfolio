@@ -2,13 +2,15 @@
 a {
     text-decoration: none;
 }
-.container-fluid{
-box-sizing: border-box;
+
+.container-fluid {
+    box-sizing: border-box;
 }
 
-.heading{
+.heading {
     color: black;
 }
+
 /* ===================================================================// home //=========================================================== */
 .home {
     text-align: center;
@@ -66,6 +68,7 @@ h1 {
 .home-button:hover {
     background-color: rgba(190, 166, 32, 0.555);
 }
+
 /* ===================================================================// about //=========================================================== */
 
 
@@ -98,7 +101,7 @@ h1 {
     margin-left: 5rem;
 }
 
-.tag-container{
+.tag-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -135,7 +138,7 @@ h1 {
 }
 
 #bio-card {
-   margin-left: 15rem;
+    margin-left: 15rem;
 }
 
 #bio-button {
@@ -151,13 +154,13 @@ h1 {
 #skill-card {
     margin-left: 25rem;
     text-transform: uppercase;
-    
+
 }
 
 
 /* uses bootstrap breakpoints as a start point */
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
 
     .card {
         top: 5rem;
@@ -169,17 +172,18 @@ h1 {
         margin: auto;
     }
 
-    #skill-card{
+    #skill-card {
         align-items: center;
         margin-left: 5rem;
     }
 
-    #bio-card{
+    #bio-card {
         margin-left: 3rem;
     }
 
-    
+
 }
+
 @media only screen and (max-width: 768px) {
 
     .tag {
@@ -187,15 +191,15 @@ h1 {
         width: 10rem;
     }
 
-    .tag p{
+    .tag p {
         display: none;
     }
 
-    .tag-img-top{
+    .tag-img-top {
         height: 4rem;
         width: 4rem;
     }
-        
+
     .card-img-top {
         display: none;
     }
@@ -213,114 +217,232 @@ h1 {
         width: 18rem;
     }
 
-    #skill-card{
+    #skill-card {
         margin-left: 8rem;
     }
 
-    #bio-button{
+    #bio-button {
         width: 100%;
         margin: auto;
     }
 
-    
 
-    .heading{
+
+    .heading {
         font-size: 3rem;
     }
 
 }
 
- @media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px) {
+
     #skill-card,
     #bio-card {
         width: 15rem;
         margin-left: 0;
     }
 
-    #skill-card{
+    #skill-card {
         margin-left: .5rem;
     }
 
-    .card{
-        top: 5rem;        
+    .card {
+        top: 5rem;
     }
 
-    #bio-button{
+    #bio-button {
         width: 90%;
         margin: 10px;
     }
 
-    .heading{
+    .heading {
         font-size: 3rem;
         color: black;
     }
 
-    .card-body{
+    .card-body {
         padding: 0;
     }
 
-    .tag h4{
+    .tag h4 {
         font-size: smaller;
     }
 
     /* this is for Galaxy A51/71 */
-    @media only screen and (max-width: 412px){
-        #skill-card, #bio-card{
+    @media only screen and (max-width: 412px) {
+
+        #skill-card,
+        #bio-card {
             width: 11rem;
             padding: 0;
             align-items: stretch;
         }
-        #skill-card{
+
+        #skill-card {
             margin-left: 3px;
         }
     }
 
-    @media only screen and (max-width: 360px){
-        #skill-card{
+    @media only screen and (max-width: 360px) {
+        #skill-card {
             margin: auto;
         }
     }
+
     /* this is for the galaxy fold */
-    @media only screen and (max-width: 280px){
-        #skill-card, #bio-card{
+    @media only screen and (max-width: 280px) {
+
+        #skill-card,
+        #bio-card {
             display: none;
         }
     }
-} 
+}
 
-    /* portfolio */
+/* portfolio */
 
-    .portfolio {
-        height: 100vh;
-        width: 100vw;
-        background-image: url(/assets/media/images/iphone-smartphone-mac-mobile-apple-technology-710553-pxhere.com.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
+.portfolio {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/assets/media/images/iphone-smartphone-mac-mobile-apple-technology-710553-pxhere.com.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.project-selector {
+    background-color: pink;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin: 2rem;
+    width: 15rem;
+    padding: 0;
+}
+
+#portfolio-paragraph {
+    margin-left: 40%;
+}
+
+.project-box {
+    background-color: rgb(230, 240, 236);
+    height: 75vh;
+    margin: 5rem;
+    overflow: scroll;
+}
+
+.project-box-project {
+    height: 20vh;
+    border: 1px solid black;
+}
+
+.project {
+    background-size: contain;
+    width: 100%;
+    color: white;
+}
+
+#project-1 {
+    background-image: url(/assets/media/images/dice.jpg);
+}
+
+#project-2 {
+    background-image: url(/assets/media/images/money-tree.jpg);
+    filter: grayscale(30%);
+}
+
+#project-3 {
+    background-image: url(/assets/media/images/canteras6.jpg);
+}
+
+#project-4 {
+    background-image: url(/assets/media/images/burger1.jpg);
+}
+
+.project p {
+    border: 1px solid rgb(231, 224, 224);
+    background-color: rgba(24, 29, 29, 0.466);
+    border-radius: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.project .card{
+    position: relative;
+    top: 0;
+}
+
+.project .card h5{
+    text-align: left;
+}
+
+#project-2 .card-title, #project-3 .card-title{
+    background-color: rgba(51, 70, 70, 0.199);
+        color: aliceblue;
+}
+
+.project ul {
+    background-color: rgba(24, 29, 29, 0.192);
+}
+
+@media only screen and (max-width: 992px){
+    #portfolio-paragraph {
+        margin-left: 30%;
+    }  
+
+    .project{
         background-size: cover;
-        position: relative;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #portfolio-paragraph {
+        margin-left: 25%;
+    } 
+
+    .project p, .project ul {
+        display: none;
     }
 
-
-
-    /* blog */
-    .blog {
-        height: 100vh;
-        width: 100vw;
-        background-image: url(/assets/media/images/notebook-table-book-leather-pen-journal-1249-pxhere.com.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
+    .project .card h5{
+        text-align: left;
+        margin-left: -3rem;
     }
+    
+}
 
-    /* contact */
+@media only screen and (max-width: 576px) {
+    #portfolio-paragraph {
+        margin-left: 20%;
+    } 
+ 
+    
 
-    .contact {
-        height: 100vh;
-        width: 100vw;
-        background-image: url(/assets/media/images/hand-light-finger-phone-lighting-close-up-912311-pxhere.com.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
+}
+
+
+
+
+/* blog */
+.blog {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/assets/media/images/notebook-table-book-leather-pen-journal-1249-pxhere.com.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* contact */
+
+.contact {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/assets/media/images/hand-light-finger-phone-lighting-close-up-912311-pxhere.com.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
