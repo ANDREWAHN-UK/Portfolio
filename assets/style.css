@@ -95,7 +95,7 @@ h1 {
 
 .card {
     width: 25rem;
-    top: 5rem;
+    top: 1rem;
     background: transparent;
     border: transparent;
     margin-left: 5rem;
@@ -147,8 +147,8 @@ h1 {
 }
 
 .card-img-top {
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
 }
 
 #skill-card {
